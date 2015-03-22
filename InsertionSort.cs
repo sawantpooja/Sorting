@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 class Sorting
 {
-  public void InsertionSort(List<int>unsortedArray)
+  public static void InsertionSort(List<int>unsortedArray)
   {
-    for(int i=0;i<unsortedArray.size();i++)
+    for(int i=0;i<unsortedArray.Count;i++)
     {
       int key= unsortedArray[i+1];
       int j=i+1;
@@ -22,9 +22,9 @@ class Sorting
     }
   }
   
-  public void PrintArray(List<int> array)
+  public static void PrintArray(List<int> array)
   {
-    for(int i=0;i<array.size();i++)
+    for(int i=0;i<array.Count;i++)
     {
         Console.WriteLine(array[i].ToString());
     }
