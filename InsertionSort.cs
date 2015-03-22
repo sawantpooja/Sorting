@@ -30,7 +30,7 @@ class Sorting
     }
   }
   
-  public static void main()
+  public static void Main()
   {
     List<int>inputArray=new List<int>{5,6,8,1,4,0};
     PrintArray(inputArray);
