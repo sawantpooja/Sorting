@@ -13,7 +13,7 @@ class Sorting
       int key= unsortedArray[i+1];
       int j=i+1;
       //Console.WriteLine("Key: "+ key + " J: "+j); 
-      while(j>0 && key<unsortedArray[j-1])
+      while(j>0 && key>unsortedArray[j-1])
       {
         //Console.WriteLine("J inside loop: "+j);
         unsortedArray[j]=unsortedArray[j-1];
