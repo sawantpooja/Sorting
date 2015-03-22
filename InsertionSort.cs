@@ -2,9 +2,7 @@ using System;
 using System.IO;
 using System.Collections;
 
-class InsertionSort
-{
-  public void InsertionSort(List<int>unsortedArray)
+public void InsertionSort(List<int>unsortedArray)
   {
     for(int i=0;i<unsortedArray.size();i++)
     {
@@ -36,5 +34,4 @@ class InsertionSort
     InsertionSort(inputArray);
     PrintArray(inputArray);
   }
-}
 
