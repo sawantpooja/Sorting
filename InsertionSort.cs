@@ -11,7 +11,7 @@ class Sorting
     {
       int key= unsortedArray[i+1];
       int j=i+1;
-      while(key<unsortedArray[j]&&j>0)
+      while(key<unsortedArray[j-1]&&j>0)
       {
         unsortedArray[j]=unsortedArray[j-1];
         j--;
