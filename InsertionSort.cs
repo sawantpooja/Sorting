@@ -7,12 +7,15 @@ class Sorting
 {
   public static void InsertionSort(List<int>unsortedArray)
   {
-    for(int i=0;i<unsortedArray.Count;i++)
+    for(int i=0;i<unsortedArray.Count-1;i++)
     {
+      
       int key= unsortedArray[i+1];
       int j=i+1;
-      while(key<unsortedArray[j-1]&&j>0)
+      //Console.WriteLine("Key: "+ key + " J: "+j); 
+      while(j>0 && key<unsortedArray[j-1])
       {
+        //Console.WriteLine("J inside loop: "+j);
         unsortedArray[j]=unsortedArray[j-1];
         j--;
       }
@@ -26,8 +29,9 @@ class Sorting
   {
     for(int i=0;i<array.Count;i++)
     {
-        Console.WriteLine(array[i].ToString());
+        Console.Write(array[i].ToString()+ " ");
     }
+    Console.WriteLine();
   }
   
   public static void Main()
